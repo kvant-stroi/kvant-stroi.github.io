@@ -60,3 +60,5 @@ footer{border-top:1px solid #242526;padding:28px 24px;text-align:center;color:#6
 .service-gallery{display:grid;grid-template-columns:1fr 1fr;gap:2px;overflow:hidden;background:#111;}
 .service-gallery img{width:100%;height:240px;object-fit:cover;display:block;}
 @media(max-width:700px){.service-gallery img{height:190px;}}
+
+.price br{line-height:1.8}
