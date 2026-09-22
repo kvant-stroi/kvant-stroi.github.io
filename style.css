@@ -86,3 +86,7 @@ footer span:last-child{margin-left:auto}
   .contact-copy h2{font-size:31px}
   footer{padding:25px 5%}
 }
+
+
+.qr-card{display:flex;align-items:center;gap:18px;margin-top:24px;padding:18px;border:1px solid rgba(255,200,0,.45);border-radius:16px;background:#0a0a0a}.qr-card img{width:130px;height:130px;background:#fff;padding:8px;border-radius:10px}.qr-card b{font-size:20px}.qr-card p{margin:7px 0 0;color:#aaa;line-height:1.5}.form input,.form textarea{font-family:inherit}
+@media(max-width:700px){.qr-card{flex-direction:column;align-items:flex-start}}

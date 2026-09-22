@@ -91,13 +91,21 @@
         <p class="messengers">WhatsApp / Telegram — пишите или звоните.</p>
       </div>
 
-      <form id="leadForm" class="form">
-        <input id="name" type="text" placeholder="Ваше имя" required>
-        <input id="phoneInput" type="tel" placeholder="Телефон" required>
-        <textarea id="message" placeholder="Коротко о вашем ремонте"></textarea>
+      <form id="leadForm" class="form" action="https://formspree.io/f/meaogvld" method="POST">
+        <input type="hidden" name="subject" value="Новая заявка с сайта КВАНТ">
+        <input id="name" name="name" type="text" placeholder="Ваше имя" required>
+        <input id="phoneInput" name="phone" type="tel" placeholder="Телефон" required>
+        <input name="email" type="email" placeholder="E-mail (необязательно)">
+        <input type="hidden" name="_replyto" value="">
+        <textarea id="message" name="message" placeholder="Коротко о вашем ремонте"></textarea>
         <button class="btn btn-gold" type="submit">Заказать бесплатный расчёт</button>
-        <small>Нажимая кнопку, вы открываете WhatsApp с готовым сообщением.</small>
+        <small>Заявка отправится на вашу почту и в Telegram после подключения Telegram в Formspree.</small>
       </form>
+
+      <div class="qr-card">
+        <img src="qr-site.png" alt="QR-код сайта КВАНТ">
+        <div><b>Сайт КВАНТ</b><p>Наведите камеру телефона, чтобы открыть сайт.</p></div>
+      </div>
     </section>
   </main>
 
@@ -107,14 +115,18 @@
   </footer>
 
 <script>
-document.getElementById('leadForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  const name = document.getElementById('name').value.trim();
-  const phone = document.getElementById('phoneInput').value.trim();
-  const message = document.getElementById('message').value.trim();
-  const text = `Здравствуйте! Хочу заказать расчёт ремонта.%0AИмя: ${encodeURIComponent(name)}%0AТелефон: ${encodeURIComponent(phone)}%0AО ремонте: ${encodeURIComponent(message)}`;
-  window.open('https://wa.me/79319856500?text=' + text, '_blank');
-});
+// Форма отправляется через Formspree после подстановки вашего ID формы.
+// Telegram и email подключаются в панели Formspree.
+</script>
+<script>
+const leadForm = document.getElementById('leadForm');
+if (leadForm) {
+  leadForm.addEventListener('submit', function () {
+    const email = leadForm.querySelector('input[name="email"]');
+    const reply = leadForm.querySelector('input[name="_replyto"]');
+    if (email && reply) reply.value = email.value || '';
+  });
+}
 </script>
 </body>
 </html>
