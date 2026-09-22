@@ -1,145 +1,120 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>КВАНТ — Ремонт и отделка квартир</title>
-  <meta name="description" content="Ремонт и отделка квартир под ключ в Санкт-Петербурге и Ленинградской области. Дизайн-проект и 3D-моделирование.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="КВАНТ — ремонт и отделка квартир под ключ в Санкт-Петербурге и Ленинградской области. Дизайн-проект, 3D-моделирование, отделка, электрика и сантехника.">
+  <title>КВАНТ — ремонт и отделка квартир</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="header">
-  <div class="container nav">
-    <a class="brand" href="#top">
-      <img src="logo.png" alt="КВАНТ">
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="КВАНТ">
+      <span class="brand-mark">✦</span>
       <span><b>КВАНТ</b><small>ПРОСТРАНСТВО ТВОЕГО УРОВНЯ</small></span>
     </a>
     <nav>
       <a href="#services">Услуги</a>
       <a href="#advantages">Преимущества</a>
-      <a href="#steps">Этапы</a>
+      <a href="#process">Этапы</a>
       <a href="#contacts">Контакты</a>
     </nav>
-    <a class="nav-phone" href="tel:+79319856500">8-931-985-65-00</a>
-  </div>
-</header>
+    <a class="phone" href="tel:+79319856500">8-931-985-65-00</a>
+  </header>
 
-<main id="top">
-<section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <div class="eyebrow">ПОД КЛЮЧ В САНКТ-ПЕТЕРБУРГЕ</div>
-      <h1>РЕМОНТ<br>И ОТДЕЛКА<br><span>КВАРТИР</span></h1>
-      <p class="lead">Качественный ремонт, понятная смета и контроль каждого этапа — от идеи до готового пространства.</p>
-      <div class="actions">
-        <a class="btn" href="#contacts">Заказать бесплатный расчёт <span>→</span></a>
-        <a class="ghost" href="#services">Посмотреть услуги</a>
+  <main id="top">
+    <section class="hero">
+      <img src="kvant-flyer.png" alt="КВАНТ — ремонт и отделка квартир" class="hero-image">
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#contacts">Заказать бесплатный расчёт →</a>
+        <a class="btn btn-dark" href="#services">Смотреть услуги</a>
       </div>
-      <div class="mini-points">
-        <div><strong>✓</strong> Гарантия по договору</div>
-        <div><strong>✓</strong> Фиксированная смета</div>
-        <div><strong>✓</strong> Сдача в срок</div>
+    </section>
+
+    <section id="advantages" class="section advantages">
+      <div class="section-head">
+        <span>КВАНТ</span>
+        <h2>Ремонт без лишних забот</h2>
       </div>
-    </div>
-    <div class="hero-art">
-      <div class="gold-shape"></div>
-      <div class="worker-card">
-        <div class="helmet">КВАНТ</div>
-        <div class="worker-silhouette"></div>
+      <div class="adv-grid">
+        <article><div class="icon">✓</div><h3>Гарантия по договору</h3><p>Фиксируем договорённости и результат работ.</p></article>
+        <article><div class="icon">▣</div><h3>3D моделирование</h3><p>Показываем будущий интерьер до начала основных работ.</p></article>
+        <article><div class="icon">₽</div><h3>Фиксированная смета</h3><p>Прозрачный расчёт без скрытых платежей.</p></article>
+        <article><div class="icon">◷</div><h3>Сдача в срок</h3><p>Планируем этапы и контролируем сроки ремонта.</p></article>
       </div>
-      <div class="badge">3D<br><small>МОДЕЛИРОВАНИЕ</small></div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section id="advantages" class="section">
-  <div class="container">
-    <div class="section-head">
-      <span>ПОЧЕМУ КВАНТ</span>
-      <h2>Ремонт без лишних забот</h2>
-    </div>
-    <div class="cards four">
-      <article><i>✓</i><h3>Гарантия</h3><p>Фиксируем договорённости и результат работ.</p></article>
-      <article><i>◷</i><h3>Соблюдаем сроки</h3><p>Планируем этапы и держим график под контролем.</p></article>
-      <article><i>₽</i><h3>Прозрачная смета</h3><p>Понятный расчёт без скрытых платежей.</p></article>
-      <article><i>★</i><h3>Опытные мастера</h3><p>Профессиональная команда для задач любой сложности.</p></article>
-    </div>
-  </div>
-</section>
+    <section id="services" class="section services">
+      <div class="section-head">
+        <span>НАШИ УСЛУГИ</span>
+        <h2>Всё в одном месте</h2>
+      </div>
+      <div class="service-grid">
+        <article class="service"><b>01</b><h3>Дизайн-проект</h3><p>Стиль, планировка, 3D-визуализация.</p></article>
+        <article class="service"><b>02</b><h3>Черновые работы</h3><p>Подготовка основания, коммуникации.</p></article>
+        <article class="service"><b>03</b><h3>Чистовая отделка</h3><p>Качественные материалы и аккуратные детали.</p></article>
+        <article class="service"><b>04</b><h3>Электрика и сантехника</h3><p>Безопасность, разводка и инженерные решения.</p></article>
+        <article class="service"><b>05</b><h3>3D моделирование</h3><p>Визуализация будущего пространства.</p></article>
+        <article class="service"><b>06</b><h3>Ремонт под ключ</h3><p>Полный цикл — от идеи до готовой квартиры.</p></article>
+      </div>
+    </section>
 
-<section id="services" class="section dark">
-  <div class="container">
-    <div class="section-head">
-      <span>НАШИ УСЛУГИ</span>
-      <h2>Всё в одном месте</h2>
-    </div>
-    <div class="services-grid">
-      <article class="service"><b>01</b><h3>Дизайн-проект</h3><p>Планировка, стиль и визуальная концепция будущего интерьера.</p></article>
-      <article class="service featured"><b>02</b><h3>3D-моделирование</h3><p>Показываем будущий интерьер до начала основных работ.</p></article>
-      <article class="service"><b>03</b><h3>Черновые работы</h3><p>Подготовка оснований и инженерных коммуникаций.</p></article>
-      <article class="service"><b>04</b><h3>Чистовая отделка</h3><p>Стены, потолки, полы и аккуратные финишные детали.</p></article>
-      <article class="service"><b>05</b><h3>Электрика и сантехника</h3><p>Безопасные и продуманные инженерные решения.</p></article>
-      <article class="service"><b>06</b><h3>Ремонт под ключ</h3><p>Берём на себя весь процесс до сдачи готовой квартиры.</p></article>
-    </div>
-  </div>
-</section>
+    <section id="process" class="section process">
+      <div class="section-head">
+        <span>КАК МЫ РАБОТАЕМ</span>
+        <h2>Понятный процесс</h2>
+      </div>
+      <div class="process-grid">
+        <div><b>01</b><h3>Заявка</h3><p>Обсуждаем задачу и назначаем встречу.</p></div>
+        <div><b>02</b><h3>Замер и смета</h3><p>Уточняем объём работ и рассчитываем стоимость.</p></div>
+        <div><b>03</b><h3>Дизайн и ремонт</h3><p>Выполняем работы по согласованному плану.</p></div>
+        <div><b>04</b><h3>Сдача</h3><p>Проверяем результат и передаём готовый объект.</p></div>
+      </div>
+    </section>
 
-<section id="steps" class="section">
-  <div class="container">
-    <div class="section-head">
-      <span>КАК МЫ РАБОТАЕМ</span>
-      <h2>Понятный процесс</h2>
-    </div>
-    <div class="steps">
-      <div><em>01</em><h3>Заявка</h3><p>Обсуждаем задачу и назначаем встречу.</p></div>
-      <div><em>02</em><h3>Замер и смета</h3><p>Уточняем объём работ и рассчитываем стоимость.</p></div>
-      <div><em>03</em><h3>Дизайн и ремонт</h3><p>Выполняем работы по согласованному плану.</p></div>
-      <div><em>04</em><h3>Сдача</h3><p>Проверяем результат и передаём готовый объект.</p></div>
-    </div>
-  </div>
-</section>
+    <section class="cta">
+      <div>
+        <span>БЕСПЛАТНЫЙ РАСЧЁТ</span>
+        <h2>Рассчитаем стоимость вашего ремонта</h2>
+        <p>Оставьте заявку — свяжемся с вами и обсудим проект.</p>
+      </div>
+      <a class="btn btn-black" href="#contacts">Получить расчёт →</a>
+    </section>
 
-<section class="cta">
-  <div class="container cta-inner">
-    <div><span>БЕСПЛАТНЫЙ РАСЧЁТ</span><h2>Рассчитаем стоимость вашего ремонта</h2><p>Оставьте заявку — свяжемся с вами и обсудим проект.</p></div>
-    <a class="btn dark-btn" href="#contacts">Получить расчёт →</a>
-  </div>
-</section>
-
-<section id="contacts" class="section contacts">
-  <div class="container contact-grid">
-    <div>
-      <div class="section-head"><span>КОНТАКТЫ</span><h2>Начнём с вашей идеи</h2></div>
-      <p class="muted">Санкт-Петербург и Ленинградская область</p>
-      <div class="contact-links">
+    <section id="contacts" class="section contacts">
+      <div class="contact-copy">
+        <span>КОНТАКТЫ</span>
+        <h2>Начнём с вашей идеи</h2>
+        <p>Санкт-Петербург и Ленинградская область</p>
         <a href="tel:+79319856500">8-931-985-65-00</a>
         <a href="tel:+78123930564">8-812-393-05-64</a>
+        <p class="messengers">WhatsApp / Telegram — пишите или звоните.</p>
       </div>
-      <p>WhatsApp / Telegram — пишите или звоните в удобном формате.</p>
-    </div>
-    <form class="form" onsubmit="return sendForm(event)">
-      <input id="name" required placeholder="Ваше имя">
-      <input id="phone" required placeholder="Телефон">
-      <textarea id="message" rows="4" placeholder="Коротко о вашем ремонте"></textarea>
-      <button class="btn" type="submit">Заказать бесплатный расчёт</button>
-      <small id="form-note">Нажимая кнопку, вы соглашаетесь на обработку данных для связи по заявке.</small>
-    </form>
-  </div>
-</section>
-</main>
 
-<footer><div class="container"><b>КВАНТ</b> — пространство твоего уровня <span>© 2026</span></div></footer>
+      <form id="leadForm" class="form">
+        <input id="name" type="text" placeholder="Ваше имя" required>
+        <input id="phoneInput" type="tel" placeholder="Телефон" required>
+        <textarea id="message" placeholder="Коротко о вашем ремонте"></textarea>
+        <button class="btn btn-gold" type="submit">Заказать бесплатный расчёт</button>
+        <small>Нажимая кнопку, вы открываете WhatsApp с готовым сообщением.</small>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <b>КВАНТ</b><span>ПРОСТРАНСТВО ТВОЕГО УРОВНЯ</span>
+    <span>© 2026</span>
+  </footer>
 
 <script>
-function sendForm(e){
+document.getElementById('leadForm').addEventListener('submit', function(e) {
   e.preventDefault();
   const name = document.getElementById('name').value.trim();
-  const phone = document.getElementById('phone').value.trim();
-  const msg = document.getElementById('message').value.trim();
-  const text = `Здравствуйте! Заявка с сайта КВАНТ.%0AИмя: ${encodeURIComponent(name)}%0AТелефон: ${encodeURIComponent(phone)}%0AЗадача: ${encodeURIComponent(msg)}`;
-  window.location.href = `https://wa.me/79319856500?text=${text}`;
-  return false;
-}
+  const phone = document.getElementById('phoneInput').value.trim();
+  const message = document.getElementById('message').value.trim();
+  const text = `Здравствуйте! Хочу заказать расчёт ремонта.%0AИмя: ${encodeURIComponent(name)}%0AТелефон: ${encodeURIComponent(phone)}%0AО ремонте: ${encodeURIComponent(message)}`;
+  window.open('https://wa.me/79319856500?text=' + text, '_blank');
+});
 </script>
 </body>
 </html>
